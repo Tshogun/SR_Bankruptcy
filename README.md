@@ -91,6 +91,23 @@ PySR search artifacts are stored under [`outputs/`](outputs/), including
 `hall_of_fame.csv` files for individual runs. These artifacts are useful for
 reviewing the equations discovered during a search.
 
+## Key result visualizations
+
+The repository now includes generated figures under [`images/`](images/):
+
+![Model ROC-AUC comparison](images/model_roc_auc.png)
+
+![Model F1-score comparison](images/model_f1_score.png)
+
+![Temporal ROC-AUC of the early-period symbolic-regression score](images/temporal_roc_auc.png)
+
+![Bankruptcy rate by time period](images/bankruptcy_rate_by_period.png)
+
+These plots summarize the main findings from the experiment: the strongest
+ROC-AUC on the held-out test set is achieved by the best PySR model, while the
+variable-overlap analysis suggests only partial stability across runs and time
+periods.
+
 ## Interpretation notes
 
 This is an experimental research notebook, not a production bankruptcy-risk
@@ -113,6 +130,12 @@ functions. In particular:
 ├── README.md
 ├── requirements.txt
 ├── SR_Experiment_One.ipynb
-└── outputs/
-	 └── <run>/hall_of_fame.csv
+├── images/
+│   ├── model_roc_auc.png
+│   ├── model_f1_score.png
+│   ├── temporal_roc_auc.png
+│   └── bankruptcy_rate_by_period.png
+├── outputs/
+│   └── <run>/hall_of_fame.csv
+└── generate_visuals.py
 ```
