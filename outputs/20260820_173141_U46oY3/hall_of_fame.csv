@@ -1,0 +1,12 @@
+Complexity,Loss,Equation
+1,0.62691593,"roa"
+3,0.1859642,"roa - current_ratio"
+4,0.07921615,"roa - exp(current_ratio)"
+5,0.045997903,"-4.8350024"
+7,0.045009725,"-3.526439 - current_ratio"
+8,0.044280566,"-3.526439 - sqrt(current_ratio)"
+10,0.044025425,"(-3.2710512 - sqrt(current_ratio)) - gross_margin"
+11,0.043965217,"(-3.2710512 - sqrt(current_ratio)) - exp(net_margin)"
+13,0.043612037,"(-3.2710512 - sqrt(current_ratio)) - exp(net_margin + net_margin)"
+15,0.043053467,"(-3.2710512 - sqrt(current_ratio)) - (exp(net_margin) * (net_margin + gross_margin))"
+21,0.042785723,"(-3.2710512 - sqrt(current_ratio)) - (exp(net_margin + 1.1332897) * (net_margin + gross_margin))"
